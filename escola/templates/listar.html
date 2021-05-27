@@ -1,0 +1,25 @@
+{% extends 'index.html'%}
+{% block title %} listar {% endblock title%}
+{% block content %}
+
+    
+    {%if id %}
+    <label>Id: <strong> {{id}} </strong> </label><br>
+    <label>Nome: <strong> {{nome}} </strong> </label><br>
+    <label>RG: <strong> {{rg}} </strong> </label>
+    {% endif%}
+    
+    <!--
+    <form method="get">
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">ID da Pessoa</label><br>
+            
+            <input name="text" id="text"></input>
+            <textarea class="form-control" id="textarea" rows="6" name="textarea" placeholder="Digite seu texto"></textarea>
+        div>
+        <button type="submit" class="btn btn-primary">Converter</button>
+    </form>
+   -->
+    
+
+{% endblock content %}
